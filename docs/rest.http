@@ -1,0 +1,17 @@
+@host = http://localhost:8080
+
+### Criar uma nova notificação
+POST {{host}}/notifications
+Content-Type: application/json
+
+{
+  "title": "Nova Notificação",
+  "message": "Esta é a mensagem da notificação."
+}
+
+### Listar todas as notificações
+GET {{host}}/notifications
+
+### Obter uma notificação específica pelo ID
+# Substitua 'your-notification-id' pelo ID real de uma notificação
+GET {{host}}/notifications/30868ed7-7f60-4607-af4c-25335d5f7849
